@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="relative h-screen overflow-hidden cursor-none">
       <SplashCursor />
-      
 
       <div
         // className="relative h-screen bg-black bg-cover bg-center flex items-center justify-center"
