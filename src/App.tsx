@@ -1,7 +1,6 @@
 import ASCIIText from "./ASCIIText";
 import CurvedLoop from "./CurvedLoop";
 import FuzzyText from "./FuzzyText";
-import Splash from "./Splash";
 import SplashCursor from "./SplashCursor";
 import Img from "./assets/img.webp"; // Adjust the path as necessary
 
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="relative h-screen overflow-hidden">
       <SplashCursor />
-      <Splash/>
+
 
       <div
         // className="relative h-screen bg-black bg-cover bg-center flex items-center justify-center"
