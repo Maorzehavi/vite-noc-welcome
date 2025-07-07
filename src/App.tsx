@@ -1,15 +1,13 @@
-import ASCIIText from "./ASCIIText";
 import CurvedLoop from "./CurvedLoop";
 import FuzzyText from "./FuzzyText";
-import Splash from "./Splash";
 import SplashCursor from "./SplashCursor";
 import Img from "./assets/img.webp"; // Adjust the path as necessary
 
 function App() {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden cursor-none">
       <SplashCursor />
-      <Splash/>
+      
 
       <div
         // className="relative h-screen bg-black bg-cover bg-center flex items-center justify-center"
@@ -28,7 +26,7 @@ function App() {
             <CurvedLoop
               marqueeText="ברוכים הבאים לשירותים מנוהלים"
               direction="right"
-              curveAmount={350}
+              curveAmount={370}
               speed={3}
             interactive={false}
             className=" text-[6rem] tracking-[5px] uppercase leading-none text-[#B7F6FF "
