@@ -1,35 +1,39 @@
 import ASCIIText from "./ASCIIText";
 import CurvedLoop from "./CurvedLoop";
 import FuzzyText from "./FuzzyText";
+import Splash from "./Splash";
 import SplashCursor from "./SplashCursor";
 import Img from "./assets/img.webp"; // Adjust the path as necessary
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden">
+      <SplashCursor />
+      <Splash/>
+
       <div
-        className="relative min-h-screen bg-black bg-cover bg-center flex items-center justify-center"
+        // className="relative h-screen bg-black bg-cover bg-center flex items-center justify-center"
+        className="bg-center h-screen bg-cover "
         style={{
           backgroundImage: `url(${Img})`,
         }}
       >
         <div className="text-blue-500">
-          <span className="justify-center flex items-center pt-8">
+          <span className="justify-center flex items-center pt-12 text-[#B7F6FF">
             <FuzzyText baseIntensity={0.01} enableHover={false}>
               משרד החוץ
             </FuzzyText>
           </span>
-          <span className="">
-           
-          </span>
-          <CurvedLoop
-            marqueeText="ברוכים הבאים לשירותים מנוהלים"
-            direction="right"
-            curveAmount={350}
-            speed={2}
+          <span className="pb-8 ">
+            <CurvedLoop
+              marqueeText="ברוכים הבאים לשירותים מנוהלים"
+              direction="right"
+              curveAmount={350}
+              speed={3}
             interactive={false}
-            className="font-bold text-[6rem] tracking-[5px] uppercase leading-none"
-          />
+            className=" text-[6rem] tracking-[5px] uppercase leading-none text-[#B7F6FF "
+            />
+            </span>
         </div>
       </div>
     </div>
